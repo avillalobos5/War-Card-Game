@@ -17,7 +17,7 @@ const VALUES = [
 
 export default class Deck {
     constructor(cards = freshDeck()){
-        this.cards = []
+        this.cards = cards
     }
 }
 

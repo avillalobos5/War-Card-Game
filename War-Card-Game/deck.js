@@ -47,7 +47,7 @@ class Card {
     getHTML() { 
         const cardDiv = document.createElement("div")
         cardDiv.innerText = this.suit
-        cardDiv.classlist.add("card", this.color)
+        cardDiv.classList.add("card",this.color)
         cardDiv.dataset.value = `${this.value} ${this.suit}`
         return cardDiv
     }

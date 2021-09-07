@@ -73,13 +73,13 @@ function startGame() {
         updateDeckCount()
 
         if (isRoundWinner(playerCard, computerCard)) {
-            text.innerText = "Win"
+            text.innerText = "Blue win"
             playerDeck.push(playerCard)
          //   playerDeck.push(computerCard)
             
         }
         else if (isRoundWinner(computerCard, playerCard)) {
-            text.innerText = "Lose"
+            text.innerText = "Green win"
          //   computerDeck.push(playerCard)
             computerDeck.push(computerCard)
         }
@@ -88,11 +88,11 @@ function startGame() {
         }
 
         if (isGameOver(playerDeck)){
-            text.innerText = "Green Wins!!!!"
+            text.innerText = "Green Wins Game!!!"
             stop = true
         }
         else if (isGameOver(computerDeck)){
-            text.innerText = "Blue Wins!!!!"
+            text.innerText = "Blue Wins Game!!!"
             stop = true
         }
     }
